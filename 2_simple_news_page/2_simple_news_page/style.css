@@ -1,0 +1,263 @@
+@font-face {
+    font-family: poppins;
+    font-style: normal;
+    font-weight: 900;
+    src: url('../fonts/poppins/poppins-bold-webfont.woff') format('woff');
+}
+
+@font-face {
+    font-family: poppins;
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/poppins/poppins-bold-webfont.woff') format('woff');
+}
+
+@font-face {
+    font-family: poppins;
+    font-style: normal;
+    font-weight: 500;
+    src: url('../fonts/poppins/poppins-medium-webfont.woff') format('woff');
+}
+
+@font-face {
+    font-family: poppins;
+    font-style: normal;
+    font-weight: 600;
+    src: url('../fonts/poppins/poppins-semibold-webfont.woff') format('woff');
+}
+
+@font-face {
+    font-family: poppins;
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/poppins/poppins-regular-webfont.woff') format('woff');
+}
+
+@font-face {
+    font-family: poppins;
+    font-style: normal;
+    font-weight: 300;
+    src: url('../fonts/poppins/poppins-light-webfont.woff') format('woff');
+}
+
+:root {
+    --color_5c48ee: #5c48ee;
+    --color_5C48F2: #5C48F2;
+    --color_0f1e6a: #0f1e6a;
+    --color_333333: #333333;
+    --color_5C48F2: #5C48F2;
+    --color_fff: #fff;  
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: poppins;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+
+}
+
+.header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.header__logo {
+    font-size: 24px;
+    font: 500;
+}
+
+.header__logo a {
+    text-decoration: none;
+    color: var(--color_5c48ee);
+}
+
+
+
+.header__nav {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.header__list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.3rem;
+}
+
+.header__item {
+    list-style-type: none;
+    padding: 0.5rem;
+
+}
+
+.header__item:not(:last-child):hover .header__link  {
+    color: var(--color_5c48ee);
+}
+
+.header__link {
+    text-decoration: none;
+    color: var(--color_333333);
+}
+
+.header__item--btn {
+    background-color: var(--color_5c48ee);
+    border-radius: 10px;
+    padding: 8px 32px;
+}
+
+.header__item--btn a {    
+    color: var(--color_fff);
+}
+
+.header__item--btn:hover { 
+    background-color: var(--color_0f1e6a);
+}
+
+.main {
+    display: flex;
+    margin-top: 5rem;
+    gap: 5rem;
+    
+}
+.main__content {
+    flex: 1;
+    padding: 4rem 0;
+}
+
+.main__content h2 {
+    line-height: 3.5rem;
+}
+.main__header {
+   font-size: 3rem; 
+}
+
+.main__header--thin {
+    font-weight: 400;
+}
+.main__header--blue {
+    font-weight: 700;
+    color: var(--color_5C48F2);
+}
+.main__header--bold {
+    font-weight: 700;
+}
+.main__desc {
+    font-size: 1rem;
+    color: var(--color_333333);
+    line-height: 1.3rem;
+    margin: 1rem 0 1.5rem 0;
+}
+.main__searchbox {
+    display: flex;
+    justify-content:start;
+}
+.main__input {
+    padding: 1rem;
+    max-width: 300px;      
+    width: 100%;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+    border: none;
+    outline: none;
+}
+.main__btn {
+    padding: 1rem;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+    background-color: var(--color_5C48F2);
+    color: var(--color_fff);
+    border: none;
+    min-width: 121px;
+}
+
+.main__information {
+    flex: 1;
+    padding: 4rem 0;
+
+}
+
+.main__images { 
+    position: relative;
+    height: 444px;
+}
+
+.main__img {
+    max-width: 48%;
+}
+
+
+.main__img--left {   
+    position: absolute;
+    left: 0;
+    border-radius: 10px;
+}
+.main__img--right {  
+    position: absolute;
+    right: 0;
+    border-radius: 10px;
+    margin-top: -5rem;
+}
+
+.main__list {
+    position: absolute;
+    z-index: 1;
+    top: 8rem;
+    left: 36%;
+    border-radius: 10px;
+    padding: 1rem;
+    list-style-position: inside;
+    color: white;
+    background: rgb(106, 68, 184, 0.8);
+    backdrop-filter: blur(4px);
+    line-height: 2rem;
+}
+.main__item {
+
+}
+
+@media (max-width:1200px) {
+    .main {
+        padding: 1rem;
+    }
+}
+@media (max-width:992px) {
+    .header__list{
+        gap: 1.5rem;
+    }
+    .main {
+        gap: 1.5rem;
+        margin-top: 1rem;
+    }
+    .main__images {
+        height: 444px;
+    }
+    .main__img--left {
+        bottom: 0;
+    }
+    .main__img--right {
+        top: 0;
+    }
+    .main__list {
+        width: 300px;
+        left: 11%;
+    }
+}
+@media (max-width:768px) {
+    .main {
+        flex-direction: column;
+    }
+}
+@media (max-width:600px) {
+
+}
