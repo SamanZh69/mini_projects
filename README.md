@@ -1,7 +1,7 @@
 
 # Programmer : Saman Zhiani
-## this is my simple coding hub
-## description :
+## This is my simple coding hub
+## Description :
 Html 
 Css
 Flexbox
