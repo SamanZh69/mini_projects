@@ -1,6 +1,6 @@
 
 # Programmer : Saman Zhiani
-## this is simple coding hub
+## this is my simple coding hub
 ## description :
 Html 
 Css
