@@ -1,6 +1,9 @@
 
-# Programmer : saman zhiani
-## this is simple learning Web technologis
+# Programmer : Saman Zhiani
+## this is simple coding hub
 ## description :
-html 
-css
+Html 
+Css
+Flexbox
+Grid
+Java Script
